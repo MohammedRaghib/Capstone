@@ -2,12 +2,6 @@ const level1_btn = document.querySelector('.level-button1');
 const level2_btn = document.querySelector('.level-button2');
 const level3_btn = document.querySelector('.level-button3');
 
-function reveal(level) {
-    const levelArticles = document.querySelectorAll('.level');
-    document.querySelector(`.level${level}`).style.display = 'block';
-    document.querySelector('.essentials').style.display = 'block';
-    startTimer();
-}
 const correctAnswers = {
     level1: ['Boolean', 'print', 'String', '==', 'split()'],
     level2: ['data type', 'True', 'shift()', 'for', 'const'],
@@ -15,7 +9,7 @@ const correctAnswers = {
 };
 
 let score = 0;
-let intervalId;
+let intervalid;
 
 
 document.querySelector('.submit1').addEventListener('click', () => submitQuiz(1));
@@ -26,7 +20,7 @@ function submitQuiz(level) {
     const userAnswers = [];
     const levelKey = `level${level}`;
 
-    clearInterval(intervalId);
+    clearInterval(intervalid);
 
     if (level === 1) {
         userAnswers.push(document.getElementById('q1').value.trim());
@@ -57,7 +51,7 @@ function submitQuiz(level) {
     });
 
     score += correctCount;
-    document.querySelector('.score_num').textContent = `Score = ${score}`;
+    document.querySelector('.score_num').textContent = `Score: ${score}`;
 
     document.querySelector(`.submit${level}`).disabled = true;
 
@@ -84,11 +78,11 @@ function startTimer() {
     const timerElement = document.querySelector('.timer_num');
     let seconds = 120;
 
-    intervalId = setInterval(() => {
+    intervalid = setInterval(() => {
         seconds--;
 
         if (seconds <= 0) {
-            clearInterval(intervalId);
+            clearInterval(intervalid);
             timerElement.textContent = 'Time is up!';
             alert('Time is up!');
         } else {
@@ -98,6 +92,6 @@ function startTimer() {
 }
 
 function resetTimer() {
-    clearInterval(intervalId);  
+    clearInterval(intervalid);  
     document.querySelector('.timer_num').textContent = 'Time: 120';
 }
