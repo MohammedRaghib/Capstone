@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url('Bgquiz.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.topic {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.topic:hover {
+    background-color: #4c4ab2;
+    transform: translateY(-3px);
+}

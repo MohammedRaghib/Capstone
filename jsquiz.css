@@ -66,7 +66,6 @@ main p {
     transform: translateY(-3px);
 }
 
-/* Essentials Section */
 .essentials {
     display: flex;
     justify-content: space-between;
@@ -85,7 +84,6 @@ main p {
     color: #444;
 }
 
-/* Question Styling */
 article {
     display: none;
     background-color: #fff;
@@ -118,7 +116,6 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-/* Submit Button */
 .submit1,
 .submit2,
 .submit3 {
@@ -141,7 +138,6 @@ input[type="radio"] {
     transform: translateY(-2px);
 }
 
-/* Details & Hints */
 details summary {
     font-size: 1rem;
     font-weight: bold;
@@ -152,7 +148,6 @@ details summary:hover {
     color: #6c63ff;
 }
 
-/* Responsive Design */
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
