@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz</h1>
+    </header>
+    <main>
+        <p>You will be participating in a quiz, there are 3 lvls of difficulty.</p>
+        <p>Choose your difficulty, every round you pass the difficulty increases</p>
+        <br>
+        <button onclick="reveal(1)" class="level-button1">Level 1</button>
+        <button onclick="reveal(2)" class="level-button2">Level 2</button>
+        <button onclick="reveal(3)" class="level-button3">Level 3</button>
+    </main>
+    <section>
+        <div class="essentials">
+            <aside class="timer">
+                <img src="" alt="">
+                <span class="timer_num">Time: 120</span>
+            </aside>
+            <aside class="score">
+                <span class="score_num">Score = 0</span>
+            </aside>
+        </div>
+        <br>
+        <article class="level1">
+            <div class="question1">
+                <label for="q1">1. What is the data type used to represent true or false values?</label>
+                <br>
+                <input type="text" maxlength="7" id="q1">
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question2">
+                <label for="q2">2. The statement `console.log("Hello, world!");` is used to ________ in the browser
+                    console.</label>
+                <br>
+                <input type="text" id="q2" maxlength="5">
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Consider what the console.log() function does.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question3">
+                <label for="q3">3. Which data type is used to represent a sequence of characters in JavaScript?</label>
+                <br>
+                <input type="radio" id="q3a" name="q3" value="Number">
+                <label for="q3a">a. Number</label>
+                <br>
+                <input type="radio" id="q3b" name="q3" value="String">
+                <label for="q3b">b. String</label>
+                <br>
+                <input type="radio" id="q3c" name="q3" value="Boolean">
+                <label for="q3c">c. Boolean</label>
+                <br>
+                <input type="radio" id="q3d" name="q3" value="Object">
+                <label for="q3d">d. Object</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question4">
+                <label for="q4">4. Which operator is used to compare two values for equality in JavaScript?</label>
+                <br>
+                <input type="radio" id="q4a" name="q4" value="==">
+                <label for="q4a">a. ==</label>
+                <br>
+                <input type="radio" id="q4b" name="q4" value="===">
+                <label for="q4b">b. ===</label>
+                <br>
+                <input type="radio" id="q4c" name="q4" value="=">
+                <label for="q4c">c. =</label>
+                <br>
+                <input type="radio" id="q4d" name="q4" value="!=">
+                <label for="q4d">d. !=</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question5">
+                <label for="q5">5. Which method is used to convert a string to an array in JavaScript?</label>
+                <br>
+                <input type="radio" id="q5a" name="q5" value="split()">
+                <label for="q5a">a. split()</label>
+                <br>
+                <input type="radio" id="q5b" name="q5" value="join()">
+                <label for="q5b">b. join()</label>
+                <br>
+                <input type="radio" id="q5c" name="q5" value="slice()">
+                <label for="q5c">c. slice()</label>
+                <br>
+                <input type="radio" id="q5d" name="q5" value="push()">
+                <label for="q5d">d. push()</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <button class="submit1">Submit</button>
+        </article>
+        <br>
+        <br>
+        <article class="level2">
+            <div class="question6">
+                <label for="q6">6. The `typeof` operator is used to determine the ________ of a value.</label>
+                <br>
+                <input type="text" id="q6" maxlength="9">
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question7">
+                <label for="q7">7. Functions in JavaScript are first-class citizens.</label>
+                <br>
+                <input type="radio" id="q7a" name="q7" value="True">
+                <label for="q7a">a. True</label>
+                <br>
+                <input type="radio" id="q7b" name="q7" value="False">
+                <label for="q7b">b. False</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question8">
+                <label for="q8">8. Which method is used to remove the first element from an array in JavaScript?
+                    (Include brackets in your answer)</label>
+                <br>
+                <input type="text" id="q8" maxlength="7">
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question9">
+                <label for="q9">9. Which loop is best suited for iterating over the elements of an array?</label>
+                <br>
+                <input type="radio" id="q9a" name="q9" value="for">
+                <label for="q9a">a. for</label>
+                <br>
+                <input type="radio" id="q9b" name="q9" value="while">
+                <label for="q9b">b. while</label>
+                <br>
+                <input type="radio" id="q9c" name="q9" value="do-while">
+                <label for="q9c">c. do-while</label>
+                <br>
+                <input type="radio" id="q9d" name="q9" value="forEach">
+                <label for="q9d">d. forEach</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question10">
+                <label for="q10">10.Which keyword is used to define a constant value in JavaScript?</label>
+                <br>
+                <input type="radio" id="q10a" name="q10" value="let">
+                <label for="q10a">a. let</label>
+                <br>
+                <input type="radio" id="q10b" name="q10" value="const">
+                <label for="q10b">b. const</label>
+                <br>
+                <input type="radio" id="q10c" name="q10" value="var">
+                <label for="q10c">c. var</label>
+                <br>
+                <input type="radio" id="q10d" name="q10" value="final">
+                <label for="q10d">d. final</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <button class="submit2">Submit</button>
+        </article>
+        <br>
+        <br>
+        <article class="level3">
+            <div class="question11">
+                <label for="q11">11. Which method is used to create a new object in JavaScript?</label>
+                <br>
+                <input type="radio" id="q11a" name="q11" value="createObject()">
+                <label for="q11a">a. createObject()</label>
+                <br>
+                <input type="radio" id="q11b" name="q11" value="new Object()">
+                <label for="q11b">b. new Object()</label>
+                <br>
+                <input type="radio" id="q11c" name="q11" value="Object.create()">
+                <label for="q11c">c. Object.create()</label>
+                <br>
+                <input type="radio" id="q11d" name="q11" value="Object()">
+                <label for="q11d">d. Object()</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question12">
+                <label for="q12">12. JavaScript supports inheritance.</label>
+                <br>
+                <input type="radio" id="q12a" name="q12" value="True">
+                <label for="q12a">a. True</label>
+                <br>
+                <input type="radio" id="q12b" name="q12" value="False">
+                <label for="q12b">b. False</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question13">
+                <label for="q13">13. The `async/await` syntax is used to handle ________ operations in
+                    JavaScript.</label>
+                <br>
+                <input type="text" id="q13" maxlength="12">
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question14">
+                <label for="q14">14. Which event is triggered when a user clicks on a button element?</label>
+                <br>
+                <input type="radio" id="q14a" name="q14" value="onclick">
+                <label for="q14a">a. onclick</label>
+                <br>
+                <input type="radio" id="q14b" name="q14" value="onmouseover">
+                <label for="q14b">b. onmouseover</label>
+                <br>
+                <input type="radio" id="q14c" name="q14" value="onchange">
+                <label for="q14c">c. onchange</label>
+                <br>
+                <input type="radio" id="q14d" name="q14" value="onsubmit">
+                <label for="q14d">d. onsubmit</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <div class="question15">
+                <label for="q15">15. Which data structure is used to store key-value pairs in JavaScript?</label>
+                <br>
+                <input type="radio" id="q15a" name="q15" value="Array">
+                <label for="q15a">a. Array</label>
+                <br>
+                <input type="radio" id="q15b" name="q15" value="Map">
+                <label for="q15b">b. Map</label>
+                <br>
+                <input type="radio" id="q15c" name="q15" value="Set">
+                <label for="q15c">c. Set</label>
+                <br>
+                <input type="radio" id="q15d" name="q15" value="Object">
+                <label for="q15d">d. Object</label>
+                <br>
+                <br>
+                <details>
+                    <summary>Hint</summary>
+                    <p>Think about data types that represent true or false values.</p>
+                </details>
+            </div>
+            <br>
+            <button class="submit3">Submit</button>
+        </article>
+    </section>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
