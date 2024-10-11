@@ -16,52 +16,6 @@ document.querySelector('.submit1').addEventListener('click', () => submitQuiz(1)
 document.querySelector('.submit2').addEventListener('click', () => submitQuiz(2));
 document.querySelector('.submit3').addEventListener('click', () => submitQuiz(3));
 
-function submitQuiz(level) {
-    const userAnswers = [];
-    const levelKey = `level${level}`;
-
-    clearInterval(intervalid);
-
-    if (level === 1) {
-        userAnswers.push(document.getElementById('q1').value.trim());
-        userAnswers.push(document.getElementById('q2').value.trim());
-        userAnswers.push(document.querySelector('input[name="q3"]:checked')?.value || '');
-        userAnswers.push(document.querySelector('input[name="q4"]:checked')?.value || '');
-        userAnswers.push(document.querySelector('input[name="q5"]:checked')?.value || '');
-    } else if (level === 2) {
-        userAnswers.push(document.getElementById('q6').value.trim());
-        userAnswers.push(document.querySelector('input[name="q7"]:checked')?.value || '');
-        userAnswers.push(document.getElementById('q8').value.trim());
-        userAnswers.push(document.querySelector('input[name="q9"]:checked')?.value || '');
-        userAnswers.push(document.querySelector('input[name="q10"]:checked')?.value || '');
-    } else if (level === 3) {
-        userAnswers.push(document.querySelector('input[name="q11"]:checked')?.value || '');
-        userAnswers.push(document.querySelector('input[name="q12"]:checked')?.value || '');
-        userAnswers.push(document.getElementById('q13').value.trim());
-        userAnswers.push(document.querySelector('input[name="q14"]:checked')?.value || '');
-        userAnswers.push(document.querySelector('input[name="q15"]:checked')?.value || '');
-    }
-
-    let correctCount = 0;
-    const answers = correctAnswers[levelKey];
-    userAnswers.forEach((answer, index) => {
-        if (answer === answers[index]) {
-            correctCount++;
-        }
-    });
-
-    score += correctCount;
-    document.querySelector('.score_num').textContent = `Score: ${score}`;
-
-    document.querySelector(`.submit${level}`).disabled = true;
-
-    alert(`You got ${correctCount} out of 5 correct for Level ${level}.`);
-
-    if (level < 3) {
-        reveal(level + 1);
-    }
-}
-
 function reveal(level) {
     document.querySelectorAll('.level1, .level2, .level3').forEach(article => {
         article.style.display = 'none';
