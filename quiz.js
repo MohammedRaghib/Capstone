@@ -84,7 +84,8 @@ function startTimer() {
             clearInterval(intervalid);
             timerElement.textContent = 'Time is up!';
             alert('Time is up!');
-            submitQuiz(level);
+            const currentLevel = document.querySelector('.level1, .level2, .level3').style.display === 'block' ? 1 : document.querySelector('.level2, .level3').style.display === 'block' ? 2 : 3;
+            submitQuiz(currentLevel);
         } else {
             timerElement.textContent = 'Time: ' + seconds;
         }
