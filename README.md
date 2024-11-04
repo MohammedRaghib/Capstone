@@ -1,7 +1,7 @@
-# Core components and features:
-1. Role based views
-2. User authetication and authourization
-3. Job listing components
-4. Search components
-5. Job details component
-7. application progress bar
+# JS quiz project
+## Overview
+This is my javascript capstone project, it is a quiz app that gives you 3 topics to choose from:
+- HTML
+- CSS
+- JS
+  Each topic has 3 levels of difficulty, every level will be timed and after each level you will be alerted your score and the score the total score will also be displayed.
