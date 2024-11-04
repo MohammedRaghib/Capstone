@@ -4,5 +4,4 @@
 3. Job listing components
 4. Search components
 5. Job details component
-6. Search component
 7. application progress bar
